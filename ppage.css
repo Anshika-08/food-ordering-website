@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:200,400|Playfair+Display');
+body {
+  background-image: linear-gradient(190deg, rgba(0, 0, 99, .05) 10%, rgba(0, 0, 255, .19) 100%);
+  padding: 0;
+  margin: 0;
+}
+.wrapper {
+  float: left;
+  width: 30%;
+  min-width: 300px;
+  background-color: #f1f1f1;
+  margin: 1.5%;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.24);
+  text-align: center;
+}
+.wrapper>h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  letter-spacing: .15em;
+  color: #333;
+}
+.details {
+  width: 95%;
+  margin: 0 auto 2em;
+  padding-top: 10.5em;
+  padding-bottom: 1em;
+  background-color: #FFEBC8;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.24);
+  transition: all ease-in 0.15s;
+}
+
+.wrapper:hover .details{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 5px rgba(0,0,0,0.22);
+  transform: translate(0px, -2px) scale(1.01);
+}
+
+.details>h1 {
+  font-family: "Playfair Display";
+  font-size: 1em;
+}
+.details>h2 {
+  font-family: sans-serif;
+  font-size: 1.4em;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+}
+.details>p {
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.image{
+  position: relative;
+  z-index: 2;
+  width: 85%;
+  height: 250px;
+  margin: 0 auto -10em;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+  transition: all ease-in .15s;
+}
+.wrapper:hover .image{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translate(0px, -3px) scale(1.02);
+}
+  
+.i1{
+    background-image: url(https://restaurantclicks.com/wp-content/uploads/2021/05/roman-style-pizza.jpg);
+}
+.i2 {
+  background-image: url(https://restaurantclicks.com/wp-content/uploads/2021/05/Calzone.jpg);
+}
+.i3 {
+  background-image: url(https://restaurantclicks.com/wp-content/uploads/2021/05/Sicilian-Pizza.jpg);
+  }
+
+@media screen and (max-width: 1000px) {
+  .wrapper{
+    width: 47%;
+  }
+}
+@media screen and(max-width:700px){
+  .wrapper{
+    float: none;
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+@media screen and(max-width:700px){
+  .wrapper{
+    float: none;
+    width: 70%;
+    margin: 1em auto;
+  }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #ffefba);
+  }
+  
+  .contact {
+    width: 750px;
+    min-width: 750px;
+    min-height: 550px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: #e24617;
+    border: 5px solid #fff;
+  }
+  
+  .right {
+    height: 500px;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    padding: 20px;
+    left: -100px;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    border: 5px solid #e24617;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .right_heading {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #e24617;
+    margin-top: 10px;
+  }
+  
+  .left {
+    position: absolute;
+    right: 50px;
+  }
+  
+  .heading {
+    font: 35px sans-serif;
+    letter-spacing: 2.5px;
+    color: #fff;
+    transform: translateX(-195px);
+  }
+  
+  .para {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    color: #fff;
+    transform: translateX(-190px);
+  }
+  
+  .form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-right: 20px;
+  }
+  
+  .field {
+    position: relative;
+  }
+  
+  input,
+  textarea {
+    width: 200px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
+    padding-top: 30px;
+  }
+  
+  .label {
+    font-size: 16pxpx;
+    color: #fff;
+    padding-left: 10px;
+    position: absolute;
+    left: -160px;
+    bottom: 25px;
+  }
+  
+  .t_msg {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    left: -160px;
+  }
+  
+  .btn {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: linear-gradient(180deg, #e24617 0%, #e24617 100%);
+    border-radius: 100px;
+    border: 0.5px solid rgba(255, 255, 255, 0.8);
+    border-width: 0.5px 0.5px 0.5px 0.5px;
+    padding: 4px 22px 5px 22px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    color: #fff;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+  }
+  
+  .btn:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  
+  .tabs {
+    padding: 30px 20px 0;
+  }
+  
+  .tab {
+    font-size: 20px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    background-color: #e24617;
+  }
+  
+  .tab i {
+    padding-right: 20px;
+    color: #5d26c1;
+  }
+  
+  .social {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .social i {
+    color: #00b4db;
+    font-size: 20px;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .right {
+      width: 250px;
+      left: -5px;
+      height: calc(100% + 10px);
+      border: none;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+  
+    .tabs {
+      padding: 55px 0 0 0;
+    }
+  
+    .tab {
+      padding: 20px 10px;
+      margin-bottom: 50px;
+      font-size: 18px;
+    }
+  
+    .tab i {
+      padding-right: 10px;
+      font-size: 16px;
+    }
+  }
+  
